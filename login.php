@@ -1,3 +1,33 @@
+<?php 
+include 'crud.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $usuario = readOne(
+        $pdo,
+        'administrador',
+        "email = '$email'"
+    );
+
+    if($email == $usuario['email'] && $senha == $usuario['senha']){
+        header("Location: aaa.php");
+        exit;
+    }
+    else{
+        echo 'Email ou senha incorretos.';
+    }
+
+
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
