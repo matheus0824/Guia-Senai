@@ -1,31 +1,30 @@
-    <?php 
-    include 'crud.php';
+<?php 
+session_start();
+include 'crud.php';
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        $usuario = readOne(
-            $pdo,
-            'administrador',
-            "email = '$email'"
-        );
+    $usuario = readOne(
+        $pdo,
+        'administrador',
+        "email = '$email'"
+    );
 
-        if($senha ===$usuario['senha']){
-            header("Location: aaa.php");
-            exit;
-        }
-        else{
-            echo "<script>alert('Email ou senha incorretos');</script>";
-        }
+    if ($usuario && $senha === $usuario['senha']) {
+        $_SESSION['admin_id'] = $usuario['id_admin'];
+        $_SESSION['admin_nome'] = $usuario['nome'];
+        $_SESSION['admin_email'] = $usuario['email'];
 
-
-
+        header("Location: dashboard.php");
+        exit;
+    } else {
+        echo "<script>alert('Email ou senha incorretos');</script>";
     }
-
-
-    ?>
+}
+?>
 
 
     <!DOCTYPE html>
