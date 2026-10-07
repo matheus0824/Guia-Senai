@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+aside{
+    height: 48.2vw;
+    width: 370px;
+    background-color: #20252a;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.info {
+    width: 350px;
+    border-radius: 5px;
+}
+
+summary {
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.conteudo {
+    background-color: #464545b2;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 6px;
+     padding-left: 20px;
+     font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cadas, .alterar{
+    width: 350px;
+    height: 55px;
+    background-color: #0e0000;
+    color: white;
+    transition: 0.3s;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.cadas:hover, .alterar:hover{
+    background-color: #ff0100;
+    color: aliceblue;
+}
+
+
+.b{
+    background-color: #0e0000;
+    transition: 0.3s;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b:hover{
+    background-color: #ff0100;
+    color: rgb(247, 242, 242);
+}
+
+.logo{
+    height: 90px;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.separar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.box {
+    height: 60px;
+    width: 350px;
+    background-color: #ff0100;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.texto h3,
+.texto p {
+    margin: 0;
+}
+
+.user_icon{
+     
+    filter: invert();
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+}
