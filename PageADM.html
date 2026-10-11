@@ -79,6 +79,36 @@
 
     </main>
 
+    <div class="planta">
+
+        <div class="espaco_filter">
+            <h3 class="filtro">Filtrar:</h3>
+            <input class="filtro_" type="text" placeholder="Digite aqui">
+        </div>
+
+
+        <div class="espaco_planta">
+                <img class="img_planta" src="./plantas/image.png" alt="">
+        </div>
+
+    </div>
+
+     <script>
+        const andares = document.querySelectorAll('.info');
+
+        andares.forEach((andar) => {
+            andar.addEventListener('toggle', () => {
+                if (andar.open) {
+                    andares.forEach((outroAndar) => {
+                        if (outroAndar !== andar) {
+                            outroAndar.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

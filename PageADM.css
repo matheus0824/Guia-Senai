@@ -1,9 +1,29 @@
 body{
     background-color: rgb(0, 0, 0);
     margin: 0;
+    display: flex;
 }
 
-aside{
+
+aside {
+    height: 100vh;
+    width: 390px;
+    box-sizing: border-box;
+    background-color: #20252a;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    padding-bottom: 95px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    flex-shrink: 0;
+}
+
+/* aside{
     height: 48.2vw;
     width: 370px;
     background-color: #20252a;
@@ -11,12 +31,18 @@ aside{
     flex-direction: column;
     padding-left: 20px;
     padding-top: 20px;
-}
+} */
+
 
 .info {
+    width: 100%;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+/* .info {
     width: 350px;
     border-radius: 5px;
-}
+} */
 
 summary {
     background-color: #222;
@@ -26,14 +52,22 @@ summary {
     cursor: pointer;
 }
 
+
 .conteudo {
+    background-color: #464545;
+    padding: 15px 20px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+/* .conteudo {
     background-color: #464545b2;
     padding: 15px;
     margin-top: 5px;
     border-radius: 6px;
      padding-left: 20px;
      font-size: 18px;
-}
+} */
 
 a{
     text-decoration: none;
@@ -58,22 +92,22 @@ a{
 }
 
 .cadas:hover, .alterar:hover{
-    background-color: #ff0100;
+    background-color: #ff00004d;
     color: aliceblue;
 }
 
 
 .b{
     background-color: #0e0000;
-    transition: 0.3s;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .b:hover{
-    background-color: #ff0100;
+    background-color: #ff00004d;
     color: rgb(247, 242, 242);
 }
 
@@ -83,12 +117,23 @@ a{
     margin-bottom: 50px;
 }
 
-.separar{
+
+
+
+.separar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+}
+/* .separar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-}
+} */
+
+
 
 .box {
     height: 60px;
@@ -119,4 +164,50 @@ a{
     padding: 15px;
     height: 50px;
     width: 50px;
+}
+
+/* _________ Local da planta _______ */
+
+.planta{
+    /* height: 945px; */
+    width: 100%;
+    /* background-color: #ff0100; */
+}
+
+.espaco_filter{
+    
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro{
+    margin: 0;
+    margin-right: 440px;
+    color: white;
+}
+
+.filtro_{
+    height: 35px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+}
+
+.espaco_planta{
+    height: 800px;
+    width: 100%;
+    /* background-color: rgb(1, 223, 223); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_planta{
+    height: 800px; 
+    border-radius: 10px;
 }
