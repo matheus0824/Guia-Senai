@@ -1,0 +1,304 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    display: flex;
+}
+
+
+aside {
+    height: 100vh;
+    width: 390px;
+    box-sizing: border-box;
+    background-color: #20252a;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    padding-bottom: 95px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    flex-shrink: 0;
+}
+
+/* aside{
+    height: 48.2vw;
+    width: 370px;
+    background-color: #20252a;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+} */
+
+
+.info {
+    width: 100%;
+    border-radius: 5px;
+    flex-shrink: 0;
+    transition: all 0.5s ease;
+}
+/* .info {
+    width: 350px;
+    border-radius: 5px;
+} */
+
+summary {
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.conteudo {
+    background-color: #464545;
+    padding: 15px 20px;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    
+}
+/* .conteudo {
+    background-color: #464545b2;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 6px;
+     padding-left: 20px;
+     font-size: 18px;
+} */
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cadas, .alterar{
+    width: 350px;
+    height: 55px;
+    background-color: #0e0000;
+    color: white;
+    transition: 0.3s;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.cadas:hover, .alterar:hover{
+    background-color: #ff00004d;
+    color: aliceblue;
+}
+
+
+.b{
+    background-color: #0e0000;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.b:hover{
+    background-color: #ff00004d;
+    color: rgb(247, 242, 242);
+}
+
+.logo{
+    height: 90px;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.separar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+}
+/* .separar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+} */
+
+
+
+.box {
+    height: 60px;
+    width: 350px;
+    background-color: #ff0100;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.texto h3,
+.texto p {
+    margin: 0;
+}
+
+.user_icon{
+     
+    filter: invert();
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+}
+
+/* _________ Local da planta _______ */
+
+.planta{
+    /* height: 945px; */
+    width: 100%;
+    /* background-color: #ff0100; */
+}
+
+.espaco_filter{
+    
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro{
+    margin: 0;
+    margin-right: 440px;
+    color: white;
+}
+
+.filtro_{
+    height: 35px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+}
+
+.espaco_planta{
+    height: 800px;
+    width: 100%;
+    /* background-color: rgb(1, 223, 223); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_planta{
+    height: 690px; 
+    border-radius: 10px;
+}
+
+
+.editar{
+    height: 750px;
+    width: 384px;
+    /* background-color: #ff0100; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela_editar{
+    height: 400px;
+    width: 380px;
+    background-color: #0e0000;
+    border-radius: 25px;
+    border:3px solid #464545;
+    padding: 10px;
+    color: white;
+}
+
+.icon_loca{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.icon_localizacao{
+    display: flex;
+    gap: 10px;
+}
+
+.icon_localizacao h2{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.linha{
+    margin-top: 15px;
+    height: 1px;
+    width: 100%;
+    background-color: #464545;
+}
+
+.input_salas{
+    margin-top: 50px;
+}
+
+.input_salas h3{
+    margin: 0;
+}
+
+.sala{
+    height: 35px;
+    width: 95%;
+    border-radius: 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    font-size: 23px;
+}
+
+.btn{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_salvar{
+    margin-top: 20px;
+    height: 35px;
+    width: 300px;
+    background-color: #ff0100;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn_salvar:hover{
+    background-color: #ff00004d;
+    color: aliceblue;
+}
