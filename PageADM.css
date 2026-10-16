@@ -1,38 +1,28 @@
-body{
+body {
     background-color: rgb(0, 0, 0);
     margin: 0;
     display: flex;
+    font-family: Arial, sans-serif;
 }
 
+main {
+    margin: 0;
+    padding: 0;
+}
 
 aside {
     height: 100vh;
     width: 390px;
     box-sizing: border-box;
     background-color: #20252a;
-
     display: flex;
     flex-direction: column;
-
     padding: 20px;
     padding-bottom: 95px;
-
     overflow-y: auto;
     overflow-x: hidden;
-
     flex-shrink: 0;
 }
-
-/* aside{
-    height: 48.2vw;
-    width: 370px;
-    background-color: #20252a;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-top: 20px;
-} */
-
 
 .info {
     width: 100%;
@@ -40,10 +30,6 @@ aside {
     flex-shrink: 0;
     transition: all 0.5s ease;
 }
-/* .info {
-    width: 350px;
-    border-radius: 5px;
-} */
 
 summary {
     background-color: #222;
@@ -53,30 +39,25 @@ summary {
     cursor: pointer;
 }
 
-
 .conteudo {
     background-color: #464545;
     padding: 15px 20px;
     margin-top: 5px;
     border-radius: 6px;
     font-size: 16px;
-    
 }
-/* .conteudo {
-    background-color: #464545b2;
-    padding: 15px;
-    margin-top: 5px;
-    border-radius: 6px;
-     padding-left: 20px;
-     font-size: 18px;
-} */
 
-a{
+.conteudo p {
+    margin: 10px 0;
+}
+
+a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.cadas, .alterar{
+.cadas,
+.alterar {
     width: 350px;
     height: 55px;
     background-color: #0e0000;
@@ -93,13 +74,13 @@ a{
     cursor: pointer;
 }
 
-.cadas:hover, .alterar:hover{
+.cadas:hover,
+.alterar:hover {
     background-color: #ff00004d;
     color: aliceblue;
 }
 
-
-.b{
+.b {
     background-color: #0e0000;
     font-size: 25px;
     display: flex;
@@ -108,19 +89,16 @@ a{
     transition: 0.5s;
 }
 
-.b:hover{
+.b:hover {
     background-color: #ff00004d;
     color: rgb(247, 242, 242);
 }
 
-.logo{
+.logo {
     height: 90px;
     width: 350px;
     margin-bottom: 50px;
 }
-
-
-
 
 .separar {
     display: flex;
@@ -128,14 +106,6 @@ a{
     gap: 15px;
     flex-shrink: 0;
 }
-/* .separar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-} */
-
-
 
 .box {
     height: 60px;
@@ -160,58 +130,58 @@ a{
     margin: 0;
 }
 
-.user_icon{
-     
+.texto h3 {
+    font-size: 14px;
+}
+
+.texto p {
+    font-size: 12px;
+}
+
+.user_icon {
     filter: invert();
     padding: 15px;
     height: 50px;
     width: 50px;
 }
 
-/* _________ Local da planta _______ */
 
-.planta{
-    /* height: 945px; */
+
+.planta {
     width: 100%;
-    /* background-color: #ff0100; */
 }
 
-.espaco_filter{
-    
+.espaco_filter {
     height: 100px;
     width: 100%;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.filtro{
+.filtro {
     margin: 0;
     margin-right: 440px;
     color: white;
 }
 
-.filtro_{
+.filtro_ {
     height: 35px;
     width: 500px;
     border-radius: 5px;
     border: none;
 }
 
-.espaco_planta{
+.espaco_planta {
     height: 800px;
     width: 100%;
-    /* background-color: rgb(1, 223, 223); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img_planta{
-    height: 800px; 
+.img_planta {
+    height: 800px;
     border-radius: 10px;
 }
-
-
